@@ -17,12 +17,12 @@ var wcolor = [
 	'w3-lime'
 ]; // 자바스크립트 배열
 
-var dan = 2;
+var dan = 2; //dan함수
 
 
 for(i = 0; i < 9; i++){
-   let gop = i+1;
-   var result = dan * gop;
+   let gop = i+1; //gop 함수
+   var result = dan * gop; //result
    console.log(dan + 'x' + gop + '=' + result);
 }
 
