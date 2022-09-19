@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var globValue1;
+		globValue2 = 100;
+		
+		function test01() {
+			var locValue;
+			gloValue = 999;
+			locValue = 10;
+		}
+		
+//		alert(globValue); 아직 함수가 실행되지 않아서 에러가 남.
+		
+		test01();
+		//여기서 실행되어서 999로 정의 됌
+		alert(globValue);
+	</script>
+</body>
+</html>
