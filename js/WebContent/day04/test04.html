@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	// 랜덤하게 1~ 20 사이의 정수 10개를 만들어서 배열에 추가하고
+	// 그 배열을 오름차순 정렬해서
+	// 내용을 출력하세요.
+	
+	// 배열변수 만들고
+	//var nums = new Array();
+	var nums = [];
+	// 랜덤한 숫자 10개 반복해서 만들고 추가하고
+	for(i = 0 ; i < 10 ; i++){
+		var no = Math.floor(Math.random() * 20 + 1);
+		nums[i] = no;
+	}
+	// 정렬하고
+	// 여기서 하는 방법은 치환정렬을 사용해서 정렬할 예정이다.
+	for(i = 0 ; i < nums.length -1 ; i++){
+		//원본숫자 꺼내는 위치값...
+			var no1 = nums[i];
+		
+		for( j = i + 1; j < nums.length ; j++){
+			//var no2 = num[j];
+			/*
+			if(no1 > no2){
+				nums[i] = no2;
+				nums[j] = no1;
+			}
+			*/
+			if(nums[i] > nums[j]){// > 를 < 로 바꿔주면 내림차순
+				var tmp = nums[i];
+				nums[i] = nums[j];
+				nums[j] = tmp;
+			}
+		}
+	}
+	// 출력하고
+	document.write('nums : ' + nums + '<br>');
+</script>
+</head>
+<body>
+
+</body>
+</html>
