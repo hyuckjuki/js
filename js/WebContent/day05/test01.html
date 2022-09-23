@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Array slice Function</title>
+<!-- 				자바스크립트		java, c
+	[] : 대괄호 ==> 배열				배열기호 , 리스트
+	{} : 중괄호 ==> 블럭				블럭, 배열
+	() : 소괄호 ==> 영역, 매개변수		영역, 매개변수
+ -->
+<script type="text/javascript">
+	/* 
+		int[] kdata = {} // 자바의 정수배열.
+	*/
+	
+	/*
+		index	0	1	2	3	4	5
+				-6	-5	-4	-3	-2	-1	
+	*/
+	var kdata = ['서울', '부산', '대구', '인천', '대전', '세종'];
+	var city1 = kdata.slice(0, 4);
+	document.write(city1 + '<br>');
+	
+	var city2 = kdata.slice(2,-1)
+	document.write(city2 + '<br>');
+	
+	var city3 = kdata.slice(-4, -2);
+	document.write(city3 + '<br>');
+	
+	document.write('kdata : ' + kdata + '<br>');
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

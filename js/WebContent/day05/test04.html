@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Array for Each</title>
+
+<script type="text/javascript">
+   var kdata = ['서울', '부산', '대전', '대구'];
+   /*
+   // 1. 함수를 미리 정의해서 입력해주는 방법
+   //배열 출력하는 기능의 함수 제작
+   function printArr(item, index){
+      document.write('배열 데이터 [' + index + '] :' + item + '<br>');
+   }
+   
+    kdata.forEach(printArr);   //방법 1
+   */
+   
+   // 2. 무명함수를 제작과 동시에 입력하는 방법
+   kdata.forEach(function(item, index){
+      document.write('배열 데이터 [' + index + '] :' + item + '<br>');
+   });  //방법 2
+   
+   var noData = [];
+   
+   for(i = 0 ; i < 10; i++){
+      noData[i] = i + 1;
+   }
+   
+   var sum = 0;
+   
+   noData.forEach(function(data){
+      sum += data;
+   });
+   
+   document.write('noData : ' + noData + '<br>');
+   document.write('SUM : ' + sum + '<br>');
+</script>
+</head>
+<body>
+
+<script type="text/javascript">
+
+</script>
+</body>
+</html>

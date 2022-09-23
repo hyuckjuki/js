@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script type="text/javascript">
+	var noData = [];
+	for(i = 0 ; i < 10 ; i++){
+		noData[i] = i + 1;
+	}
+	
+	var mapData = noData.map(function(value){
+		return value * value;
+	});
+	
+	document.write('noData : ' + noData + '<br>');
+	document.write('mapData : ' + mapData + '<br>');
+	document.write('mapData type : ' + (Array.isArray(mapData) ? '배열' : '배열 아님'/* 배열인지 알아보는 함수, 삼항연산자 */) + '<br>');
+</script>
+</head>
+<body>
+<!-- 
+this
+java : 실행중인 객체 자기자신
+js : 함수를 호출하는 요소
+ -->
+<script type="text/javascript">
+
+</script>
+</body>
+</html>

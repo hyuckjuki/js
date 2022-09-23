@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link type ="text/css" rel="stylesheet" href="../css/w3.css">
+<link type ="text/css" rel="stylesheet" href="../smart/w3.css">
+<title></title>
+<script type="text/javascript">
+
+</script>
+</head>
+<body>
+	
+	<div class="w3-content mxw650">
+		<h1 class="w3-padding w3-pink w3-center w3-margin-bottom">click event test</h1>
+		
+		<div class="w3-button w150 w3-blue" onclick ="tagCont(this)">button1</div>
+		<div class="w3-button w150 w3-blue" onclick ="tagCont(this)">button2</div>
+		<div class="w3-button w150 w3-blue" onclick ="tagCont(this)">button3</div>
+		<div class="w3-button w150 w3-blue" onclick ="tagCont(this)">button4</div>
+		<div class="w3-button w150 w3-blue" onclick ="tagCont(this)">button5</div>
+	</div>
+<!-- 
+this
+java : 실행중인 객체 자기자신
+js : 함수를 호출하는 요소
+ -->
+<script type="text/javascript">
+	function tagCont(el){
+		var txt = el.innerHTML;
+		
+		alert(txt);
+		}
+</script>
+</body>
+</html>
