@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script type="text/javascript">
+	var jeny = ['제니', 27, 'F'];
+	
+	//연관배열
+	/*
+		형식]
+			
+			var 변수이름 = {'키값1': 데이터1, '키값2': 데이터2,.....};
+			
+			이렇게 연관배열로 데이터를 기억하게 되면 데이터를 구분하는 키값으로 데이털를 꺼내야 한다.
+	*/
+	var jennie = {'name': '제니', 'age': 27, 'gen': 'F'}
+	alert(jennie['name']); //name추출
+	console.log(jennie.name); 
+	
+	// 배열에 데이터 추가하기
+	//일반배열
+	jeny[3] = '휘파람';
+	
+	jennie['song'] = '휘파람';
+	
+	document.write('jeny :' + jeny + '<br>');
+	document.write('jennie.song' + jennie.song + '<br>');
+	document.write('jennie["name"] : ' + jennie['name'] + '<br>');
+	
+var data =	{"response":
+					{
+						"body":
+								{
+									"totalCount":40,
+									"items":[
+												{
+													"so2Grade":"1",
+													"coFlag":null,
+													"khaiValue":"-",
+													"so2Value":"0.002",
+													"coValue":"0.3",
+													"pm25Flag":null,
+													"pm10Flag":null,
+													"o3Grade":"2",
+													"pm10Value":"10",
+													"khaiGrade":null,
+													"pm25Value":"9",
+													"sidoName":"서울",
+													"no2Flag":null,
+													"no2Grade":"1",
+													"o3Flag":null,
+													"pm25Grade":null,
+													"so2Flag":null,
+													"dataTime":"2022-09-26 15:00",
+													"coGrade":"1",
+													"no2Value":"0.013","stationName":"중구","pm10Grade":null,"o3Value":"0.065"
+												},
+												{
+													"so2Grade":"1","coFlag":null,"khaiValue":"-","so2Value":"0.001","coValue":"0.4","pm25Flag":null,"pm10Flag":null,"o3Grade":"2","pm10Value":"23","khaiGrade":null,"pm25Value":"3","sidoName":"서울","no2Flag":null,"no2Grade":"1","o3Flag":null,"pm25Grade":null,"so2Flag":null,"dataTime":"2022-09-26 15:00","coGrade":"1","no2Value":"0.025","stationName":"한강대로","pm10Grade":null,"o3Value":"0.061"
+												}
+											],
+									"pageNo":1,"numOfRows":2},"header":{"resultMsg":"NORMAL_CODE","resultCode":"00"
+								}
+					}
+};
+
+var txt = data.response.body.items[0].so2Value;
+
+document.write('<h1 style="text-align: center;"> so2value : ' + txt + '</h1>')
+</script>
+</head>
+<body>
+
+<script type="text/javascript">
+
+</script>
+</body>
+</html>
