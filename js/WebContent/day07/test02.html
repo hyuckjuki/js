@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script type="text/javascript">
+
+</script>
+</head>
+<body>
+	<p id="carname"></p> 
+	<p id="carcolor"></p> 
+	<p id="carspeed"></p>
+ <script>
+ var car={
+	 name: 'Sonata',
+	 speed: 50,
+	 color: 'white',
+	 start: function() {
+	 	return this.speed+10;
+	 }
+ };
+	car.name = 'Lambo'; 
+	var cname = document.getElementById("carname"); //카네임이라는 아이디를 골라서 cname을 넣어주는데..
+	cname.textContent=car.name;//cname에다가 car이라는 객체의 name 값(소나타)를 가져오는 것이다.
+	var colname = document.getElementById("carcolor");
+	colname.textContent=car.color;
+	var cspeed = document.getElementById("carspeed");
+	cspeed.textContent=car.start();
+	
+	car.jimkan = 'tiny'
+	document.write('<p id="jimkan">' + car.jimkan + '</p>')
+ </script>
+<script type="text/javascript">
+
+</script>
+</body>
+</html>

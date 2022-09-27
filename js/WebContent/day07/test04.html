@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script type="text/javascript">
+	function car(name, color, speed){
+		this.name = name;
+		this.color = color;
+		this.speed = speed;
+		this.speedup = function(){
+			return this.speed + 10;
+		};
+		this.speeddown = function(){
+			return this.speed - 10
+		};
+	}
+	/* 
+		var jennie = {
+			name : 'tico',
+			color : 'orange',
+			speed : 80,
+			speedup : function(){
+				return this.speed + 10;
+			},
+			speedup : function(){
+				return this.speed - 10;
+			}
+		};
+	랑 위에거랑 똑같은 얘기임	
+	*/
+	var jennie = new car('tico','orange',80);
+	alert (jennie.name + '-' + jennie.color + '-' + jennie.speed);
+</script>
+</head>
+<body>
+
+<script type="text/javascript">
+
+</script>
+</body>
+</html>
