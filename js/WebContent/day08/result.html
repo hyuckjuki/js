@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login Result</title>
+<link rel="stylesheet" type="text/css" href="../css/w3.css">
+<link rel="stylesheet" type="text/css" href="../css/smart.css">
+</head>
+<body>
+	<div class="w3-content mxw600 w3-center">
+		<h1 class="w3-padding w3-blue w3-card-4 w3-margin-bottom">로그인 정보</h1>
+		<div class="w3-col w3-card-4 w3-padding">
+			<div class="w3-col">
+				<h3 class="w3-col m4 w3-right-align">ID : </h3>
+				<h3 class="w3-col m8" id="id"></h3>
+			</div>
+			<div class="w3-col">
+				<h3 class="w3-col m4 w3-right-align">Domain : </h3>
+				<h3 class="w3-col m8" id="domain"></h3>
+			</div>
+			<div class="w3-col">
+				<h3 class="w3-col m4 w3-right-align">PW : </h3>
+				<h3 class="w3-col m8" id="pw"></h3>
+			</div>
+		</div>
+	</div>
+	
+<script type="text/javascript">
+	var data = location.href;
+	data = location.search;
+	
+	var spw = data.substring(data.lastIndexOf('=')+1);
+	//alert(spw);
+	document.getElementById('pw').innerHTML = spw;
+</script>
+</body>
+</html>
